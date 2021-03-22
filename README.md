@@ -1,0 +1,2 @@
+# spring-multi-module-example
+
