@@ -13,6 +13,7 @@ buildscript {
 }
 // root 프로젝트까지 적용하고 싶다면 allprojects로 등록하시면 됩니다.
 subprojects { // subprojects는 settings.gradle에 include된 프로젝트 전부를 관리합니다
+//    하위 프로젝트들 모두 SpringBoot와 Java에 의존성을 두고 있기에 관련된 plugin을 등록하였습니다.
     group 'me'
     version '1.0'
 
@@ -41,6 +42,7 @@ project(':module-api') {
 
 project(':module-web') {
     dependencies {
-        compile project(':module-common')
+        // error: package me.service does not exist
+        compile project(':module-api') // 이렇게해서 MemberService를 이용할 순 없는 것인가? 왜 안되는걸까.
     }
 }

@@ -1,0 +1,4 @@
+me/ModuleCommonApplicationTests.java
+ me.ModuleCommonApplicationTests
+me/repository/MemberRepositoryTest.java
+ me.repository.MemberRepositoryTest
