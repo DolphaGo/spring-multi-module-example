@@ -1,4 +1,0 @@
-me/domain/Member.java
- me.domain.Member
-me/repository/MemberRepository.java
- me.repository.MemberRepository
