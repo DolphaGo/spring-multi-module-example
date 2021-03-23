@@ -2,7 +2,7 @@ package me;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
-public class ModuleCommonApplicationTests {
-    public void contextLoads() {}
-}
+//@SpringBootApplication
+//public class ModuleCommonApplicationTests {
+//    public void contextLoads() {}
+//}

@@ -49,6 +49,6 @@ project(':module-api') {
 
 project(':module-web') {
     dependencies {
-        compile project(':module-api')
+        implementation project(':module-api')
     }
 }
