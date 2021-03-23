@@ -6,8 +6,13 @@
 - SpringBoot: 2.4.4
 - build : gradle
 
+### Implementation
+- module-common : Entity, Repository
+- module-api : Service
+- module-web : Controller
 
 
+### Tree
 ```
 ├── README.md
 ├── build.gradle
