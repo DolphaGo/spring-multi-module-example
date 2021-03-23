@@ -34,6 +34,8 @@ subprojects { // subprojects는 settings.gradle에 include된 프로젝트 전�
         compileOnly 'org.projectlombok:lombok'
         developmentOnly 'org.springframework.boot:spring-boot-devtools'
         annotationProcessor 'org.projectlombok:lombok'
+
+        implementation 'org.springframework.boot:spring-boot-starter-test'
     }
 }
 // project의 경우 하위 프로젝트간의 의존성을 관리합니다.
@@ -47,7 +49,6 @@ project(':module-api') {
 
 project(':module-web') {
     dependencies {
-        // error: package me.service does not exist
-        compile project(':module-api') // 이렇게해서 MemberService를 이용할 순 없는 것인가? 왜 안되는걸까.
+        compile project(':module-api')
     }
 }
