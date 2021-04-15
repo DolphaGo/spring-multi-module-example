@@ -41,14 +41,14 @@ subprojects { // subprojects는 settings.gradle에 include된 프로젝트 전�
 // project의 경우 하위 프로젝트간의 의존성을 관리합니다.
 // 참고로 :은 디렉토리 path를 얘기합니다.
 // root 프로젝트에서 하위 프로젝트 사이에 계층이 하나 존재하기 때문에 추가하였습니다.
-project(':module-api') {
+project(':module-service') {
     dependencies {
-        compile project(':module-common')
+        compile project(':module-core')
     }
 }
 
-project(':module-web') {
+project(':module-api') {
     dependencies {
-        implementation project(':module-api')
+        implementation project(':module-service')
     }
 }

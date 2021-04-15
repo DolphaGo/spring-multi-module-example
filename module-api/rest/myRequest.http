@@ -1,0 +1,9 @@
+POST http://localhost:8080/save
+Content-Type: application/json
+
+{
+"name" : "aaa",
+"email" : "aaa@test.net"
+}
+
+###
