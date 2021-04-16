@@ -1,6 +1,1 @@
-spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/testdb?serverTimezone=UTC&autoReconnection=true&useSSL=false
-    username: test
-    password: test
-    driver-class-name: com.mysql.cj.jdbc.Driver
+## TODO : 상위 모듈로의 프로필 전파 방법 모색

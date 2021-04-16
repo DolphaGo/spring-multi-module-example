@@ -43,12 +43,13 @@ subprojects { // subprojects는 settings.gradle에 include된 프로젝트 전�
 // root 프로젝트에서 하위 프로젝트 사이에 계층이 하나 존재하기 때문에 추가하였습니다.
 project(':module-service') {
     dependencies {
-        compile project(':module-core')
+        implementation project(':module-core')
     }
 }
 
 project(':module-api') {
     dependencies {
+        implementation project(':module-core')
         implementation project(':module-service')
     }
 }
