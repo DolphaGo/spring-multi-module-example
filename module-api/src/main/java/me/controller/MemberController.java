@@ -18,8 +18,10 @@ public class MemberController {
     }
 
     @GetMapping("/")
-    public Member get() {
-        return new Member("DolphaGo", "adamdoha@naver.com");
+    public ResponseEntity<String> get() {
+        Member member = new Member("DolphaGo", "adamdoha@naver.com");
+        Long id = memberService.signup(member);
+        return ResponseEntity.ok(id + "번 데이터로 저장되었습니다.");
     }
 
     @PostMapping("/save")
