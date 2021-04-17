@@ -73,3 +73,29 @@ public class YamlEnvironmentPostProcessor implements EnvironmentPostProcessor {
         }
     }
 }
+
+/*
+기본적으로 전체 path에서
+application-{profile}.yml을 찾는다.
+그래서 어떤 path에 있더라도
+profile이 mysql 일 경우
+application-mysql.yml 을 알아서 읽는다.
+
+만약
+profile이 mysql 인데
+application-mysql.yml이 없다면
+이 상황이 문제인데
+
+이 경우
+resources/config에 application.yml가 존재하면
+environment에 자동으로 등록이 된다 -ㅂ-
+(= environment.getPropertySources()에 application.yml이 추가된다.)
+이유는 모르겠다....
+
+
+- org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.Hikari.dataSource에서 90 line
+브레이크 포인트 걸고 property 값 보면
+으아으아 모르겠다 !!! ㅋㅋㅋ
+
+어려운 스프링 ㅠ__ㅠ
+ */
