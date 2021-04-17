@@ -10,3 +10,8 @@
 - module-core : Entity, Repository
 - module-service : Service
 - module-api : Controller
+
+
+### Reference
+- [멀티모듈에 한 방으로 적용되는 application.yml](https://devyounji.tistory.com/40)
+- [goodGid/Spring-Multi-Module-Template](https://github.com/goodGid/Spring-Multi-Module-Template)
